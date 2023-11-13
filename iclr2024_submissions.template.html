@@ -3,8 +3,10 @@
 <head>
     <meta charset='UTF-8'>
     <title>ICLR2024 Statistics</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <link rel="preload" href='web_src/noto_sans.min.css' as='style'>
-    <link rel="preload" href="web_src/tablesort.min.js" as='script'>
     <link rel="preload" href="web_src/stats.js" as='script'>
     <link rel="stylesheet" href="web_src/noto_sans.min.css">
     <link rel="stylesheet" href="web_src/style.min.css">
@@ -27,9 +29,9 @@
             <span class="bg">R1</span>: ratings @2023-11-11 | <a href="images/stats_1111.png">Rating distribution</a>:<br>
             <a href="images/stats_1111.png"><img src="images/stats_1111.png" width="700px"></a>
         </li>
-<!--        <li>-->
-<!--            <span class="bg">∆R</span>: R7-R1.-->
-<!--        </li>-->
+        <!--        <li>-->
+        <!--            <span class="bg">∆R</span>: R7-R1.-->
+        <!--        </li>-->
         <li>
             <a href="https://guoqiangwei.xyz/iclr2023_stats/iclr2023_submissions.html">ICLR 2023 statistics.</a>
         </li>
@@ -58,16 +60,18 @@
     <div class="sub-menu">
         <a href="iclr2024_statistics.html">Statistics</a>
     </div>
+    <div class="hspace"><input type="search" id="searchBox" placeholder="Search..."></div>
 </div>
 
-<table id="all-subs" class="main-table">
-    <thead data-sort-method='none'>
+<!--<div class="hspace"><input type="search" id="searchBox" placeholder="Search..."></div>-->
+<table id="all-subs" class="main-table" data-page-length='100'>
+    <thead>
     <tr>
-        <th data-sort-method='none' class="no-sort th-rank"># (7215)</th>
+        <th data-sort-method='none' class="th-rank"># (7215)</th>
         <th role="columnheader" class="th-title">Title</th>
         <th role="columnheader" class="th-rat">R1</th>
         <th role="columnheader" class="th-rat">R1-std</th>
-<!--        <th role="columnheader" class="th-rat">∆R</th>-->
+        <!--        <th role="columnheader" class="th-rat">∆R</th>-->
         <th role="columnheader" class="th-rats">Ratings</th>
         <!--        <th role="columnheader" class="th-d">👍</th>-->
     </tr>
@@ -110,7 +114,6 @@
 </table>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script src='web_src/tablesort.min.js' defer></script>
 <script src='web_src/stats.js' defer></script>
 
 </body>

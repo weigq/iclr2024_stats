@@ -75,41 +75,41 @@ th:first-child {
 	border-top: none;
 }
 
-th[role=columnheader]:not(.no-sort) {
-	cursor: pointer;
-}
+/*th[role=columnheader]:not(.no-sort) {*/
+/*	cursor: pointer;*/
+/*}*/
 
-th[role=columnheader]:not(.no-sort):after {
-	content: '';
-	float: right;
-	margin-top: 10px;
-	margin-right: 6px;
-	/*margin-left: 4px;*/
-	border-width: 0 6px 6px;
-	border-style: solid;
-	border-color: var(--my-blue) transparent;
-	/*visibility: hidden;*/
-	opacity: .2;
-	-ms-user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-}
+/*th[role=columnheader]:not(.no-sort):after {*/
+/*	content: '';*/
+/*	float: right;*/
+/*	margin-top: 10px;*/
+/*	margin-right: 6px;*/
+/*	!*margin-left: 4px;*!*/
+/*	border-width: 0 6px 6px;*/
+/*	border-style: solid;*/
+/*	border-color: var(--my-blue) transparent;*/
+/*	!*visibility: hidden;*!*/
+/*	opacity: .2;*/
+/*	-ms-user-select: none;*/
+/*	-webkit-user-select: none;*/
+/*	-moz-user-select: none;*/
+/*	user-select: none;*/
+/*}*/
 
-th[aria-sort=descending]:not(.no-sort):after {
-	border-bottom: none;
-	border-width: 6px 6px 0;
-}
+/*th[aria-sort=descending]:not(.no-sort):after {*/
+/*	border-bottom: none;*/
+/*	border-width: 6px 6px 0;*/
+/*}*/
 
-th[aria-sort]:not(.no-sort):after {
-	visibility: visible;
-	opacity: .8;
-}
+/*th[aria-sort]:not(.no-sort):after {*/
+/*	visibility: visible;*/
+/*	opacity: .8;*/
+/*}*/
 
-th[role=columnheader]:not(.no-sort):hover:after {
-	visibility: visible;
-	opacity: 1;
-}
+/*th[role=columnheader]:not(.no-sort):hover:after {*/
+/*	visibility: visible;*/
+/*	opacity: 1;*/
+/*}*/
 
 .header {
 	width: 100%;
@@ -410,7 +410,7 @@ a img:hover {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
 	bottom: 20px; /* Place the button at the bottom of the page */
-	right: 30px; /* Place the button 30px from the right */
+	right: 10px; /* Place the button 30px from the right */
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
 	outline: none; /* Remove outline */
@@ -429,4 +429,49 @@ a img:hover {
 
 .r1 {
 	color: rgba(47, 58, 73, 0.61);
+}
+
+.PaneSpecific {
+	float: left;
+}
+
+.hspace {
+	height: 49px;
+	line-height: 49px;
+	font-size: 20px;
+	color: var(--nips-font-black);
+	margin-left: auto;
+}
+
+.hspace input {
+	height: 80%;
+	width: 200pt;
+	margin-right: 2pt;
+	border-radius: 6pt;
+}
+
+.hspace input:focus {
+	border-radius: 6pt;
+}
+
+.hspace input::placeholder {
+	font-size: 18px;
+}
+
+.dataTables_filter {
+	display: none;
+}
+
+.dataTables_info {
+	display: none;
+}
+
+.dataTables_paginate {
+	margin-right: 5%;
+	/*display: none;*/
+}
+
+.paging_simple_numbers {
+	margin-right: 5%;
+	/*display: none;*/
 }
