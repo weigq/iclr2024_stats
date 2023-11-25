@@ -10,7 +10,7 @@ window.onscroll=function(){scrollFunction()};
 $(document).ready(function() {
     let table = $('#all-subs').dataTable({
         dom: "<'#searchBox'>frtip",
-        "order": [[ 2, 'des' ]],
+        "order": [[ 3, 'des' ]],
         "columnDefs": [ {
             "searchable": false,
             "orderable": false,

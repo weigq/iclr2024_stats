@@ -30,7 +30,7 @@ if __name__ == "__main__":
         db.cursor.execute(f"ALTER TABLE submissions ADD COLUMN r_{args.suf}_cnt int")
         db.cursor.execute(f"ALTER TABLE submissions ADD COLUMN r_{args.suf}_avg float")
         db.cursor.execute(f"ALTER TABLE submissions ADD COLUMN r_{args.suf}_std float")
-        db.cursor.execute(f"ALTER TABLE submissions ADD COLUMN r_{args.suf}_list text")
+        db.cursor.execute(f"ALTER TABLE submissions ADD COLUMN r_{args.suf} text")
         print(f"Creat column with suffix: {args.suf} successfully.")
     except:
         print(
